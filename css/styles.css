@@ -1,0 +1,20 @@
+h1, h2, h3, span{
+    padding: 0.2rem;
+    width: 2rem;
+    text-align: left;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: normal;
+    color: #000;
+}
+
+section, div{
+    border: 1px solid #ccc;
+    padding-left: 1rem;
+    width: 25dvw;
+    margin: 0.5rem;
+}
+
+section > div{
+    border: none;
+}

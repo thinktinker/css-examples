@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+
+/* TODO: Remove the comment from point 1 to 4 to view the differences */
+
+/* 1. Descendant Selector targets all <h1> elements inside <section>, regardless of nesting level */
+/* section h1 {
+  background-color: red;
+} */
+
+/* 2. Child Selector targets only <h1> elements that are direct children of <section> */
+/* section > h1 {
+    background-color: red;
+} */
+
+/* 3. Next Sibling Selector targets the first <h1> element immediately following an <h2> element */
+/* h2 + h1 {
+    background-color: red;
+} */
+
+/* 4. Subsequent Sibling Selector targets all <h1> elements that come after an <h2>, sharing the same parent */
+/* h2 ~ h1 {
+    background-color: red;
+} */
+
+</style>
+
+<body>
+    <section>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h1>H1</h1>
+      <h1>H1</h1>
+    </section>
+    <section>
+      <h2>H2</h2>
+      <h1>H1</h1>
+    </section>
+    <section>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <span>DIV</span>
+      <div>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h1>H1</h1>
+      </div>
+    </section>
+    <div>
+      <h1>H1</h1>
+      <h2>H2</h2>
+      <h1>H1</h1>
+      <h3>H3</h3>
+      <h1>H1</h1>
+    </div>
+  </body>
+</html>
